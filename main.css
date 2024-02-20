@@ -537,4 +537,12 @@ input[type="email"]:focus {
 
 }
 
+footer {
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 
