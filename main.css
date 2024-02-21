@@ -97,7 +97,7 @@ img {
 }
 
 
-/** frase DESARROLLO WEB **/
+/** frase DESARROLLO WEB ************************************************************/
 
 #shimmerWave {
   color: rgb(88, 166, 255);
@@ -256,7 +256,7 @@ img {
   }
 }
 
-/**  users-color-container  geometrico**/
+/**  users-color-container  geometrico********************************************************/
 .users-color-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -350,7 +350,7 @@ img {
 
 
 
-/**  Seccion AVANCE  **/
+/**  Seccion AVANCE  *************************************************/
 
 .avance {
   font-family: "Raleway", sans-serif;
@@ -397,8 +397,7 @@ img {
 .left, .center, .right, .lefter, .righter {
   width: 100px;
   height: 75px;
- /* width: 200px;
-  height: 150px;*/
+ 
   transform-style: preserve-3d;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -491,7 +490,7 @@ img {
 }
 
 
-/* SECTION - tabs */
+/* SECTION - tabs ************************************************************************/
 
 :root {
   --primary: rgb(134, 0, 125);
@@ -726,7 +725,7 @@ input[type="email"]:focus {
 }
 
 
-/** FOOTER  */
+/** FOOTER  **********************************************************************/
 footer {
   height: 20vh;
   display: grid;
@@ -747,7 +746,7 @@ input[type="email"]:focus {
 
 
 
-/***  RESPONSIVE***/
+/***  RESPONSIVE**********************************************************************/
 
 @media (max-width: 1215px) {
   .description > p {
@@ -827,15 +826,22 @@ input[type="email"]:focus {
 }
 
 @media (max-width: 460px) {
-   .home {
+  .home {
     display: grid;
     grid-template-rows: 50% 43%;
     place-items: center;
 
     gap: 60px;
     padding: 35px 30px;
-   }
-}
-
-
+  }
+  .left, .center, .right, .lefter, .righter {
+    width: 50px;
+    height: 37px;
+  }
+  .explainer {
+    font-size: 0.7rem;
+  }
+  .avance {
+    font-size: 0.7rem;
+}}
 
