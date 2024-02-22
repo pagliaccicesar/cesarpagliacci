@@ -354,7 +354,8 @@ img {
 
 .avance {
   font-family: "Raleway", sans-serif;
-  background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+  background-image: radial-gradient(circle at center, #86007D, #f343e7);
+  /*background-image: radial-gradient(circle at center, #899Dc4, #495D84);*/
   background-size: cover;
   background-repeat: no-repeat;
   height: 21vh;
@@ -409,12 +410,13 @@ img {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #58d;
+  background-color: #86007D;
+  /*background-color: #58d;*/
   cursor: pointer;
   background-blend-mode: color-burn;
 }
 .left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
-  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  box-shadow: 0 0 30px 10px #86007D;
   background-color: #ccf;
 }
 
@@ -427,7 +429,7 @@ img {
   position: absolute;
   will-change: transform;
   color: #fff;
-  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+  text-shadow: 0 0 5px #86007D;
 }
 
 .lefter {
@@ -463,8 +465,8 @@ img {
   transition: all 0.6s ease;
   width: 100%;
   height: 100%;
-  background-color: #303050;
-  background-image: radial-gradient(circle at center top, #cce, #33a);
+  background-color: #86007D;  
+  background-image: radial-gradient(circle at center top, #cce, #86007D);
   border-radius: 10px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   display: flex;
@@ -490,6 +492,11 @@ img {
 }
 
 
+/* seccion sobre mi  ***************/
+
+
+
+
 /* SECTION - tabs ************************************************************************/
 
 :root {
@@ -498,12 +505,6 @@ img {
   --secondary: rgb(117, 227, 242);
   --textos: rgb(169, 169, 169);
 }
-
-/*  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
 
 main {
   height: 100vh;
