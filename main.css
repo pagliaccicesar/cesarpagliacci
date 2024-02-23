@@ -379,6 +379,11 @@ img {
   transform-style: preserve-3d;
 }
 
+.avance a {
+  cursor: pointer;
+  color: none;
+}
+
 .all:hover {
   perspective: 1000px;
   transition: all 1.3s ease-in;
