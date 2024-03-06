@@ -18,7 +18,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 img {
@@ -27,13 +27,13 @@ img {
   user-select: none;
 }
 
-/* SECTION - HOME */
+/************* SECTION - HOME **********************/
 
 .home {
   display: grid;
   grid-template-columns: 45% 43%;
   place-items: center;
-  gap: 50px;
+  gap: 50px; 
   background:black;
   /*background: rgb(35, 36, 57, 1);*/
   /*background: rgb(0, 3, 59);*/
@@ -97,7 +97,7 @@ img {
 }
 
 
-/** frase DESARROLLO WEB ************************************************************/
+/************** frase DESARROLLO WEB **************************/
 
 #shimmerWave {
   color: rgb(88, 166, 255);
@@ -256,7 +256,7 @@ img {
   }
 }
 
-/**  users-color-container  geometrico********************************************************/
+/*******************  users-color-container  geometrico   **********************/
 .users-color-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -282,7 +282,7 @@ img {
 
 .item:nth-child(2) {
   background-color: red;
-  border-radius: 50% 50% 0 0;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(3) {
@@ -291,11 +291,11 @@ img {
 }
 
 .item:nth-child(4) {
-  border-radius: 0 0 0 50%;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(5) {
-  border-radius: 0 50% 50% 0;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(6) {
@@ -306,13 +306,13 @@ img {
 
 .item:nth-child(7) {  
 
-  border-radius: 50% 50% 0 50%;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(8) {
   background-color: yellow;
   /*background-color: #fe7519;*/
-  border-radius: 50% 0 0 50%;
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(9) {
@@ -324,17 +324,15 @@ img {
 
 .item:nth-child(10) {
   background-color: rgb(255, 160, 7);
-  border-radius:  0 50% 50% 50%;
+  border-radius:  50% 50% 50% 50%;
 }
 
-.item:nth-child(11) {
-  background-color: orange;
-  /*background-color: #fcd659;*/
-  border-radius: 50% 50% 0 0;
+.item:nth-child(11) {  
+  border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(12) {  
-  border-radius: 50% 0 0 0;
+  border-radius:10% 10% 10% 10%;
 }
 
 @keyframes fadeIn {
@@ -350,12 +348,13 @@ img {
 
 
 
-/**  Seccion AVANCE  *************************************************/
+/**********************  Seccion AVANCE  ****************************/
 
 .avance {
   font-family: "Raleway", sans-serif;
-  background-image: radial-gradient(circle at center, #86007D, #f343e7);
-  /*background-image: radial-gradient(circle at center, #899Dc4, #495D84);*/
+
+  /*background-image: radial-gradient(circle at center, #86007D, #f343e7);*/
+  background-image: radial-gradient(circle at center, rgb(0, 0, 249), #3678fc);
   background-size: cover;
   background-repeat: no-repeat;
   height: 21vh;
@@ -379,10 +378,10 @@ img {
   transform-style: preserve-3d;
 }
 
-.avance a {
+/*.avance a {
   cursor: pointer;
   color: none;
-}
+}*/
 
 .all:hover {
   perspective: 1000px;
@@ -407,7 +406,7 @@ img {
   transform-style: preserve-3d;
   border-radius: 10px;
   border: 1px solid #fff;
-  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  box-shadow: 0 0 20px 5px #675af7;
   opacity: 0;
   transition: all 0.3s ease;
   transition-delay: 1s;
@@ -415,13 +414,14 @@ img {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #86007D;
-  /*background-color: #58d;*/
+  
+  /*background-color: #86007D;*/
+  background-color: rgb(0, 0, 249);
   cursor: pointer;
   background-blend-mode: color-burn;
 }
 .left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
-  box-shadow: 0 0 30px 10px #86007D;
+  box-shadow: 0 0 30px 10px rgb(0, 0, 249);
   background-color: #ccf;
 }
 
@@ -433,13 +433,13 @@ img {
   left: 5px;
   position: absolute;
   will-change: transform;
-  color: #fff;
-  text-shadow: 0 0 5px #86007D;
+  color: white;
+  text-shadow: 0 0 5px #5749f3;
 }
 
 .lefter {
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-  background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
+  background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);  
 }
 
 .left {
@@ -466,18 +466,19 @@ img {
   font-weight: 300;
   font-size: 1rem;
   /*font-size: 2rem;*/
-  color: #fff;
+  color: white;
   transition: all 0.6s ease;
   width: 100%;
   height: 100%;
-  background-color: #86007D;  
-  background-image: radial-gradient(circle at center top, #cce, #86007D);
+  background-color: rgb(0, 0, 249);  
+  background-image: radial-gradient(circle at center top, #cce, rgb(0, 0, 249));
   border-radius: 10px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 a:hover {
   cursor: pointer;
@@ -506,7 +507,7 @@ a:hover {
 
 
 
-/* SECTION - tabs ************************************************************************/
+/**************** SECTION - tabs ***********************************/
 
 :root {
   --primary: rgb(134, 0, 125);
@@ -518,7 +519,7 @@ a:hover {
 main {
   height: 100vh;
   display: grid;
-  place-items: center;
+  place-items: center;  
   background-color: black;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -661,7 +662,7 @@ main {
   animation: image 1s ease-out forwards;
 }
 
-/* seccion cards -  portfolio********************/
+/************************ seccion cards -  portfolio  ********************/
 
 
 img {
@@ -742,8 +743,8 @@ img {
   transition: all 0.2s ease-in-out 0.2s;
 }
 
-a {
-  background-color: #D29990;
+a, .port {
+ /* background-color: #D29990;*/
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-shadow: 0 -1px 1px #cd452f;
@@ -761,9 +762,9 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover {
+/*a:hover, .port {
   background-color: #e28e80;
-}
+}*/
 
 h3 {
   color: #fff;
