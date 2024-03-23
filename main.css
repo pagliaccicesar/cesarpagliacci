@@ -655,6 +655,21 @@ img {
   overflow: hidden;
   padding: 0;
 }
+.portfolio h2 {
+  color: white;
+}
+
+.portfolio .title2::before { 
+  background: #fff;
+}
+
+.portfolio .title2::after {
+  color:rgb(11, 242, 7);
+  background: black;
+  content: "Subidos y en GitHub";
+}
+
+
 .portfolio li {
   float: left;
   width: 100%;
