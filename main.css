@@ -557,11 +557,10 @@ section .title2::after {
   transform: translateX(-50%);
 }
 
-
+/******** Service  ********/
 .services{
   font-family: "Poppins", sans-serif;
 }
-
 
 .services .serv-content{
   display: flex;
@@ -570,20 +569,16 @@ section .title2::after {
   justify-content: space-between;
 }
 
-/*  Service  */
-.services,
-.projects {
+.services {
   color: #fff;
   background: black;
 }
 
-.services .title2::before,
-.projects .title2::before {
+.services .title2::before {
   background: #fff;
 }
 
-.services .title2::after,
-.projects .title2::after {
+.services .title2::after {
   color:rgb(11, 242, 7);
   background: black;
   content: "What I Provide ?";
@@ -880,6 +875,9 @@ input[type="email"]:focus {
 }
 
 
+
+
+
 /** FOOTER  **********************************************************************/
 footer {
   height: 20vh;
@@ -898,6 +896,7 @@ footer {
 input[type="email"]:focus {
   outline-offset: 6px;
 }
+
 
 
 
@@ -930,6 +929,9 @@ input[type="email"]:focus {
 
   .btn-grad {
     padding: 8px 12px;
+  }
+  .portfolio {
+    padding-top: 150px;
   }
 }
 
@@ -981,6 +983,9 @@ input[type="email"]:focus {
   .description > p {
     font-size: 1rem;
   }
+  .portfolio {
+    padding-top: 350px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1000,7 +1005,11 @@ input[type="email"]:focus {
   }
   .avance {
     font-size: 0.7rem;
-}}
+  }
+  .portfolio {
+    padding-top: 350px;
+  }
+}
 
 
 
