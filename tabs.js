@@ -18,3 +18,7 @@ function splitTextToSpans(targetElement) {
 }
 splitTextToSpans(target);
 
+
+
+
+
