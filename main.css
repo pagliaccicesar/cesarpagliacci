@@ -1037,6 +1037,7 @@ img {
 }
 .portfolio h2 {
   color: white;
+  font-size: xx-large;
 }
 
 .portfolio .title2::before { 
