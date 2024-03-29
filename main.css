@@ -15,9 +15,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*font-family: "Nunito", sans-serif;*/
   font-family: "Manrope", sans-serif;
-  /*font-family: 'Poppins', sans-serif;*/
+  
 }
 
 html {
@@ -37,16 +36,11 @@ img {
   grid-template-columns: 45% 39%;
   place-items: center;
   gap: 50px; 
-  background:black;
-  /*background: rgb(35, 36, 57, 1);*/
-  /*background: rgb(0, 3, 59);*/
+  background:black;  
   background: radial-gradient(
     circle,
     rgba(35, 36, 57, 1) 80%,
-    black,
-    
-  /*rgb(58, 60, 100) 1%,   
-   rgba(35, 36, 57, 1) 80%*/
+    black,  
   );
   overflow: hidden;
   padding: 35px 80px;
@@ -58,17 +52,13 @@ img {
 }
 
 .description {
-  color: white;
-  /*color: rgb(169, 169, 169);*/
-  /*color: #fff;*/
+  color: white;  
   padding: 0 50px;
 }
 
 .description > h1 {
-  font-weight: bold;
-  /*font-family: 'Poppins', sans-serif;*/
-  font-family: "Manrope", sans-serif;
-  /*font-family: "Tilt Neon", sans-serif;*/
+  font-weight: bold; 
+  font-family: "Manrope", sans-serif;  
   font-size: clamp(2.3rem, 5vw, 2.5rem);
   line-height: 1;
   margin-bottom: 30px;
@@ -78,8 +68,7 @@ img {
   
   font-family: "Manrope", sans-serif;
   font-weight: bold;
-  font-size: 4.2rem;
-  /*font-family: "Tilt Neon", sans-serif;*/
+  font-size: 4.2rem;  
   background-image: linear-gradient(
     90deg,
     rgb(134, 0, 125) 0%,
@@ -95,8 +84,7 @@ img {
 }
 
 .description > p {
-  font-family: "Manrope", sans-serif;
-  /*font-family: "Nunito", sans-serif;*/
+  font-family: "Manrope", sans-serif; 
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -280,9 +268,7 @@ img {
   opacity: 0;
 }
 
-.item:nth-child(1) {
-  /*background-color: red;*/
-  /*background-color: #67d7e1;*/
+.item:nth-child(1) {  
   border-radius: 50% 50% 0 50%;
 }
 
@@ -305,8 +291,7 @@ img {
 }
 
 .item:nth-child(6) {
-  background-color: yellow;
-  /*background-color: #8071a8;*/
+  background-color: yellow; 
   border-radius: 50% 50% 50% 50%;
 }
 
@@ -316,14 +301,12 @@ img {
 }
 
 .item:nth-child(8) {
-  background-color: yellow;
-  /*background-color: #fe7519;*/
+  background-color: yellow;  
   border-radius: 10% 10% 10% 10%;
 }
 
 .item:nth-child(9) {
-  background-color: red;
-  /*background-color: #f5bec3;*/
+  background-color: rgb(0, 0, 249);  
   border-radius: 50% 0 50% 50%;
  
 }
@@ -335,7 +318,7 @@ img {
 
 .item:nth-child(11) {  
   background-color: rgb(0, 0, 249);
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 51% 51% 51% 51%;
 }
 
 .item:nth-child(12) {  
@@ -538,7 +521,7 @@ section .title2{
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 section .title2::before {
@@ -561,7 +544,7 @@ section .title2::after {
   transform: translateX(-50%);
 }
 
-/******** Service  ********/
+/************************* Service  **************************/
 .services{
   font-family: "Poppins", sans-serif;
 }
@@ -584,7 +567,7 @@ section .title2::after {
 
 .services .title2::after {
   color:rgb(0, 0, 249);
-  background: black;
+  background: black; 
   content: "What I Provide ?";
 }
 
@@ -949,6 +932,7 @@ body {
     display: grid;
     place-items: center;    
     min-height: 10vh;
+    padding-top: 2px;
     color: var(--text-col);
     background: var(--bg-col);
   }
@@ -959,12 +943,20 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+  @media (min-width: 715px) {
+    .btn1-group {
+      display: inline-block;      
+      grid-gap: 40px;      
+    }    
+  }
   @media (max-width: 715px) {
     .btn1-group {
       display: inline-block;      
       grid-gap: 40px;      
     }    
   }
+
+
 
   .btn1-group .btn1:not(:last-child) {
     margin: 2rem 0.5rem;   
@@ -1005,15 +997,14 @@ body {
     box-shadow: 5px 5px 0 var(--tertiary);
     background: transparent;
   }
-
-  .btn1.cuarto {
+  /*.btn1.cuarto {
     background: var(--cuarto);
     border: 2px solid var(--cuarto);
   }
   .btn1.cuarto:hover {
     box-shadow: 5px 5px 0 var(--cuarto);
     background: transparent;
-  }
+  }*/
 
 /************************ seccion cards -  portfolio  ********************/
 
