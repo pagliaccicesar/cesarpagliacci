@@ -556,19 +556,21 @@ section .title2::after {
   justify-content: space-between;
 }
 
-.services {
+.services h2 {
   color: #fff;
   background: black;
+  font-size: xx-large;
 }
 
 .services .title2::before {
   background: #fff;
+ 
 }
 
 .services .title2::after {
   color:rgb(0, 0, 249);
   background: black; 
-  content: "What I Provide ?";
+  content: " Que brindo? ";
 }
 
 .services .serv-content .card {
@@ -631,6 +633,7 @@ body {
 
 .cvitae h2 {
   color: white;
+  font-size: xx-large;
 }
 
 .cvitae .title2::before { 
@@ -639,8 +642,9 @@ body {
 
 .cvitae .title2::after {
   color:rgb(0, 0, 249);
+ 
   background: black;
-  content: "Mi preparación";
+  content: "Mis estudios";
 }
 
 .timeline {
