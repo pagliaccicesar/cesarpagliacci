@@ -642,8 +642,7 @@ body {
 }
 
 .cvitae .title2::after {
-  color:rgb(0, 0, 249);
- 
+  color:rgb(0, 0, 249); 
   background: black;
   content: "Mis estudios";
 }
@@ -805,8 +804,7 @@ body {
 }
 
 .desc {
-  margin: 1em 0.75em 0 0;
-  
+  margin: 1em 0.75em 0 0;  
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
@@ -815,6 +813,7 @@ body {
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
+
 
 /* ================ Timeline Media Queries ================ */
 
@@ -921,6 +920,8 @@ body {
 	margin: 1em 4em 0 4em;
   }
 }
+
+  
 
 /*** certificados  ***/
 
@@ -1084,10 +1085,10 @@ img {
 .portfolio figure:hover img {
   opacity: .3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  -moz-transform: scale(5);
-  -ms-transform: scale(5);
-  -webkit-transform: scale(5);
-  transform: scale(5);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
 }
 .portfolio figure:hover figcaption {
   top: 50%;
