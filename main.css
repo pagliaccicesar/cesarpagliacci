@@ -1,28 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");  /* nueva letra*/
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
-
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif;
-  
+  font-family: "Manrope", sans-serif;  
 }
-
 html {
   scroll-behavior: smooth;  
 }
-
 img {
   width: 100%;
   pointer-events: none;
@@ -37,35 +29,26 @@ img {
   place-items: center;
   gap: 50px; 
   background:black;  
-  background: radial-gradient(
-    circle,
-    rgba(35, 36, 57, 1) 80%,
-    black,  
-  );
+  background: radial-gradient(circle,rgba(35, 36, 57, 1) 80%,black,);
   overflow: hidden;
   padding: 35px 80px;
 }
-
 .logo {
-  width: 36%;
-  height: auto;
+  width: 32%;
+  height: auto
 }
-
 .description {
   color: white;  
   padding: 0 50px;
 }
-
 .description > h1 {
   font-weight: bold; 
   font-family: "Manrope", sans-serif;  
   font-size: clamp(2.3rem, 5vw, 2.5rem);
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
-.gradient-text {
-  
+.gradient-text {  
   font-family: "Manrope", sans-serif;
   font-weight: bold;
   font-size: 4.2rem;  
@@ -82,7 +65,6 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
 }
-
 .description > p {
   font-family: "Manrope", sans-serif; 
   font-size: 1.2rem;
@@ -90,12 +72,12 @@ img {
   margin-bottom: 30px;
 }
 
-
 /************** frase DESARROLLO WEB **************************/
 
 #shimmerWave {
   color: rgb(88, 166, 255);
   font-size: 22px;
+  padding-top: 8px;
   font-family: "Open-Sans", sans-serif;
   font-weight: 600;
   perspective: 80px;
@@ -257,7 +239,6 @@ img {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
-
 .item {
   max-width: 200px;
   aspect-ratio: 1/1;
@@ -267,61 +248,46 @@ img {
   animation-delay: calc(0.2s * var(--i));
   opacity: 0;
 }
-
 .item:nth-child(1) {  
   border-radius: 50% 50% 0 50%;
 }
-
 .item:nth-child(2) {
   background-color: rgb(0, 0, 249);
   border-radius: 50% 50% 50% 50%;
 }
-
 .item:nth-child(3) {
   background-color: rgb(134, 0, 125);
   border-radius: 50%;
 }
-
 .item:nth-child(4) {
   border-radius: 10% 10% 10% 10%;
 }
-
 .item:nth-child(5) {
   border-radius: 10% 10% 10% 10%;
 }
-
 .item:nth-child(6) {
   background-color: yellow; 
   border-radius: 50% 50% 50% 50%;
 }
-
-.item:nth-child(7) {  
-
+.item:nth-child(7) {
   border-radius: 10% 10% 10% 10%;
 }
-
 .item:nth-child(8) {
   background-color: yellow;  
   border-radius: 10% 10% 10% 10%;
 }
-
 .item:nth-child(9) {
   background-color: rgb(0, 0, 249);  
-  border-radius: 50% 0 50% 50%;
- 
+  border-radius: 50% 0 50% 50%; 
 }
-
 .item:nth-child(10) {
   background-color: rgb(134, 0, 125);
   border-radius:  50% 50% 50% 50%;
 }
-
 .item:nth-child(11) {  
-  background-color: white;
-  /*background-color: rgb(0, 0, 249);*/
+  background-color: white; 
   border-radius: 51% 51% 51% 51%;
 }
-
 .item:nth-child(12) {  
   border-radius:10% 10% 10% 10%;
 }
@@ -337,14 +303,10 @@ img {
   }
 }
 
-
-
 /**********************  Seccion AVANCE  ****************************/
 
 .avance {
-  font-family: "Raleway", sans-serif;
-
-  /*background-image: radial-gradient(circle at center, #86007D, #f343e7);*/
+  font-family: "Raleway", sans-serif; 
   background-image: radial-gradient(circle at center, rgb(0, 0, 249), #3678fc);
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,11 +315,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
-  /*background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);*/
+  background: #000; 
   font-weight: 300;
 }
-
 .all {
   display: flex;
   perspective: 10px;
@@ -368,12 +328,6 @@ img {
   justify-content: center;
   transform-style: preserve-3d;
 }
-
-/*.avance a {
-  cursor: pointer;
-  color: none;
-}*/
-
 .all:hover {
   perspective: 1000px;
   transition: all 1.3s ease-in;
@@ -389,11 +343,9 @@ img {
 .all:hover .explainer {
   opacity: 0;
 }
-
 .left, .center, .right, .lefter, .righter {
   width: 100px;
-  height: 75px;
- 
+  height: 75px; 
   transform-style: preserve-3d;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -404,10 +356,7 @@ img {
   position: relative;
   background-position: center center;
   background-size: contain;
-  background-repeat: no-repeat;
-  
-  
-  /*background-color: rgb(0, 0, 249);*/
+  background-repeat: no-repeat;  
   background-color: rgb(0, 0, 249);
   cursor: pointer;
   background-blend-mode: color-burn;
@@ -416,7 +365,6 @@ img {
   box-shadow: 0 0 30px 10px rgb(0, 0, 249);
   background-color: #ccf;
 }
-
 .text {
   transform: translateY(30px);
   opacity: 0;
@@ -425,40 +373,32 @@ img {
   left: 5px;
   position: absolute;
   will-change: transform;
-  color: white;
-  /*text-shadow: 0 0 5px #5749f3;*/
+  color: white; 
   text-shadow: 0 0 5px rgb(0, 0, 249);
 }
-
 .lefter {
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);  
 }
-
 .left {
   transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/creative_draw-512.png);
 }
-
 .center {
   opacity: 1;
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
 }
-
 .right {
   transform: translateX(30px) translateZ(-25px) rotateY(5deg);
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);
 }
-
 .righter {
   transform: translateX(60px) translateZ(-50px) rotateY(10deg);
   background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);
 }
-
 .explainer {
   font-weight: 300;
   font-size: 1rem;
-  /*font-size: 2rem;*/
   color: white;
   transition: all 0.6s ease;
   width: 100%;
@@ -471,12 +411,9 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-
 a:hover {
   cursor: pointer;
 }
-
 .ref {
   background-color: #000;
   background-image: linear-gradient(to bottom, #d80, #c00);
@@ -494,9 +431,7 @@ a:hover {
   font-size: 12px;
 }
 
-
-/* seccion sobre mi  ***************/
-
+/************ seccion sobre mi  ***************/
 
 main {
   height: 120vh;
@@ -505,11 +440,9 @@ main {
   background-color: black;
   color: rgba(255, 255, 255, 0.85);
 }
-
 section {
   padding: 100px 0;
 }
-
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -524,7 +457,6 @@ section .title2{
   padding-bottom: 20px;
   font-family: "Manrope", sans-serif;
 }
-
 section .title2::before {
   content: "";
   position: absolute;
@@ -534,7 +466,6 @@ section .title2::before {
   height: 3px;
   transform: translateX(-50%);
 }
-
 section .title2::after {
   position: absolute;
   bottom: -8px;
@@ -549,31 +480,25 @@ section .title2::after {
 .services{
   font-family: "Poppins", sans-serif;
 }
-
 .services .serv-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-
 .services h2 {
   color: #fff;
   background: black;
   font-size: xx-large;
 }
-
 .services .title2::before {
-  background: #fff;
- 
+  background: #fff; 
 }
-
 .services .title2::after {
   color:rgb(0, 0, 249);
   background: black; 
   content: " Que brindo? ";
 }
-
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -583,19 +508,15 @@ section .title2::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .services .serv-content .card:hover {
   background: #1e3551;
 }
-
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
-
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-
 .services .serv-content .card i {
   font-size: 50px;
   color: #888e8d;
@@ -604,17 +525,14 @@ section .title2::after {
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
 }
-
 .services .serv-content .card:hover i {
   color: #fff;
 }
-
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-
 
 /*********************** seccion sobre mi   ***********************************/
 
@@ -622,8 +540,7 @@ section .title2::after {
 body {	
   margin: 0;
   padding: 0;
-  background: black;
-  
+  background: black;  
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 112.5%;
@@ -631,22 +548,21 @@ body {
 }
 
 /* ================ The Timeline ================ */
-
+.cvitae {
+  padding: 150px 0;
+}
 .cvitae h2 {
   color: white;
   font-size: xx-large;
 }
-
 .cvitae .title2::before { 
   background: #fff;
 }
-
 .cvitae .title2::after {
   color:rgb(0, 0, 249); 
   background: black;
   content: "Mis estudios";
 }
-
 .timeline {
   position: relative;
   width: 660px;
@@ -655,7 +571,6 @@ body {
   padding: 1em 0;
   list-style-type: none;
 }
-
 .timeline:before {
   position: absolute;
   left: 50%;
@@ -671,15 +586,12 @@ body {
   background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);  
   z-index: 5;
 }
-
 .timeline li {
   padding: 1em 0;
 }
-
 .timeline li:after {
   content: "";
   display: block;
@@ -687,51 +599,41 @@ body {
   clear: both;
   visibility: hidden;
 }
-
 .direction-l {
   position: relative;
   width: 300px;
   float: left;
   text-align: right;
 }
-
 .direction-r {
   position: relative;
   width: 300px;
   float: right;
 }
-
 .flag-wrapper {
   position: relative;
-  display: inline-block;
-  
+  display: inline-block;  
   text-align: center;
 }
-
 .flag {
   position: relative;
   display: inline;
-  background: #000;
-  /*background: rgb(248,248,248);*/
+  background: #000; 
   padding: 6px 10px;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
   font-weight: 600;
   text-align: left;
 }
-
 .direction-l .flag {
   -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
-
 .direction-r .flag {
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
 }
-
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
@@ -747,11 +649,9 @@ body {
   border: 4px solid rgb(255,80,80);
   z-index: 10;
 }
-
 .direction-r .flag:before {
   left: -40px;
 }
-
 .direction-l .flag:after {
   content: "";
   position: absolute;
@@ -765,7 +665,6 @@ body {
   border-width: 8px;
   pointer-events: none;
 }
-
 .direction-r .flag:after {
   content: "";
   position: absolute;
@@ -779,7 +678,6 @@ body {
   border-width: 8px;
   pointer-events: none;
 }
-
 .time-wrapper {
   display: inline;
   
@@ -788,64 +686,50 @@ body {
   color: rgb(250,80,80);
   vertical-align: middle;
 }
-
 .direction-l .time-wrapper {
   float: left;
 }
-
 .direction-r .time-wrapper {
   float: right;
 }
-
 .time {
   display: inline-block;
   padding: 4px 6px;
   background: black;
 }
-
 .desc {
   margin: 1em 0.75em 0 0;  
   font-size: 0.77777em;
   font-style: italic;
   line-height: 1.5em;
 }
-
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
 
-
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 660px) {
-
 .timeline {
  	width: 100%;
 	padding: 4em 0 1em 0;
 }
-
 .timeline li {
 	padding: 2em 0;
 }
-
 .direction-l,
 .direction-r {
 	float: none;
 	width: 100%;
-
 	text-align: center;
 }
-
 .flag-wrapper {
 	text-align: center;
 }
-
 .flag {
   background: black;
-	/*background: rgb(255,255,255);*/
 	z-index: 15;
 }
-
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
@@ -856,13 +740,11 @@ body {
 	width: 12px;
 	height: 12px;
 	margin-left: -9px;
-  background: black;
-	/*background: #fff;*/
+  background: black;	
 	border-radius: 10px;
 	border: 4px solid rgb(255,80,80);
 	z-index: 10;
 }
-
 .direction-l .flag:after,
 .direction-r .flag:after {
 	content: "";
@@ -877,34 +759,28 @@ body {
 	border-width: 8px;
 	pointer-events: none;
 }
-
 .time-wrapper {
 	display: block;
 	position: relative;
 	margin: 4px 0 0 0;
 	z-index: 14;
 }
-
 .direction-l .time-wrapper {
 	float: none;
 }
-
 .direction-r .time-wrapper {
 	float: none;
 }
-
 .desc {
 	position: relative;
 	margin: 1em 0 0 0;
 	padding: 1em;
-  background: black;
-	/*background: rgb(245,245,245);*/
+  background: black;	
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 	box-shadow: 0 0 1px rgba(0,0,0,0.20);	
   z-index: 15;
 }
-
 .direction-l .desc,
 .direction-r .desc {
 	position: relative;
@@ -913,17 +789,14 @@ body {
   z-index: 15;
   }
 }
-
 @media screen and (min-width: 400px) and (max-width: 660px) {
 .direction-l .desc,
 .direction-r .desc {
 	margin: 1em 4em 0 4em;
   }
-}
+}  
 
-  
-
-/*** certificados  ***/
+/************ certificados  ****************/
 
 :root {
     --primary: dodgerblue;
@@ -932,17 +805,16 @@ body {
     --cuarto: yellow;
     --text-col: #fff;
     --bg-col: black;
-  }
-  
+  }  
   .sobremi {
     display: grid;
     place-items: center;    
     min-height: 10vh;
-    padding-top: 2px;
+    padding: 25px 0;
+    /*padding-top: 2px;*/
     color: var(--text-col);
     background: var(--bg-col);
-  }
-  
+  }  
   .btn1-group {
     text-align: center;
     display: grid;
@@ -961,13 +833,9 @@ body {
       grid-gap: 40px;      
     }    
   }
-
-
-
   .btn1-group .btn1:not(:last-child) {
     margin: 2rem 0.5rem;   
-  }
-  
+  }  
   .btn1 {
     appearance: none;
     display: inline-block;
@@ -1003,17 +871,8 @@ body {
     box-shadow: 5px 5px 0 var(--tertiary);
     background: transparent;
   }
-  /*.btn1.cuarto {
-    background: var(--cuarto);
-    border: 2px solid var(--cuarto);
-  }
-  .btn1.cuarto:hover {
-    box-shadow: 5px 5px 0 var(--cuarto);
-    background: transparent;
-  }*/
-
+  
 /************************ seccion cards -  portfolio  ********************/
-
 
 img {
   width: 100%;
@@ -1024,35 +883,29 @@ img {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
 .wrap {
   max-width: 1000px;
   margin: 0 auto;
   padding-left: 20px;
 }
-
 .portfolio {
   background-color: #000;
   margin: 0;
   overflow: hidden;
-  padding: 0;
+  padding: 100px 0;
 }
 .portfolio h2 {
   color: white;
   font-size: xx-large;
 }
-
 .portfolio .title2::before { 
   background: #fff;
 }
-
 .portfolio .title2::after {
   color:rgb(0, 0, 249);
   background: black;
   content: "Subidos y en GitHub";
 }
-
-
 .portfolio li {
   float: left;
   width: 100%;
@@ -1108,12 +961,9 @@ img {
   -webkit-transition-delay: 0.2s;
   transition: all 0.2s ease-in-out 0.2s;
 }
-
-a {
- /* background-color: #D29990;*/
+.portfolio a { 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-shadow: 0 -1px 1px #cd452f;
+  font-weight: bold;  
   text-decoration: none;
   color: #fff;
   width: 50px;
@@ -1128,10 +978,6 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/*a:hover, .port {
-  background-color: #e28e80;
-}*/
-
 h3 {
   color: #fff;
   font-family: Helvetica, Arial, sans-serif;
@@ -1156,7 +1002,6 @@ h3 {
   -webkit-transition-delay: 0.4s;
   transition: all 0.15s ease-in-out 0.4s;
 }
-
 [data-filter*="group"] {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -1190,18 +1035,14 @@ h3 {
   }
 }
 
-
-
 /** FOOTER AND SECTION - form  **********************************************************************/
 
 #form {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  
+  justify-content: flex-start;  
 }
-
 input {
   padding-inline-end: 10px;
   padding-inline-start: 10px;
@@ -1211,27 +1052,23 @@ input {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   margin-right: 10px;
   transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-}
+  -webkit-transition: all 0.3s ease-in;}
 
 input::placeholder {
   color: rgb(117, 152, 242);
   opacity: 0.5;
   font-weight: 500;
 }
-
 input[type="email"] {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
   font-size: 1rem;
 }
-
 input[type="email"]:focus {
   border: transparent;
   outline: 2px dotted rgb(117, 152, 242);
   outline-offset: -3px;
 }
-
 .btn {
   display: flex;
   justify-content: center;
@@ -1262,20 +1099,6 @@ input[type="email"]:focus {
   background-position: right;
 }
 
-footer h2 {
-  color: white;
-}
-
-footer .title2::before { 
-  background: #fff;
-}
-
-footer .title2::after {
-  color:rgb(11, 242, 7);
-  background: black;
-  content: "Consultame";
-}
-
 footer {
   height: 5vh;  
   display: grid;
@@ -1283,7 +1106,6 @@ footer {
   background-color: black;
   color: rgba(255, 255, 255, 0.85);
 }
-
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -1293,20 +1115,15 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-
 #form {
   flex-direction: column;
   align-items: center;
   gap: 30px;
   margin-top: 20px;
 }
-
 input[type="email"]:focus {
   outline-offset: 6px;
 }
-
-
 .copyright {
   display: flex;
   justify-content:center;
