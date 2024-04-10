@@ -1138,6 +1138,12 @@ input[type="email"]:focus {
   margin-bottom: 24px;
   list-style: none;
 }
+.inicio {
+  display: flex;
+  justify-content:right;
+  margin-bottom: 4px;
+  margin-right: 34px;
+}
 
 /***  RESPONSIVE**********************************************************************/
 
