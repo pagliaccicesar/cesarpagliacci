@@ -535,6 +535,12 @@ section .title2::after {
   margin: 10px 0 7px 0;
 }
 
+.services .logo_separador {
+  width: 8em;
+  height: auto; 
+  margin: 2em auto;
+}
+
 /*********************** seccion sobre mi   ***********************************/
 
 /*** cronologia  ***/
@@ -1246,6 +1252,9 @@ input[type="email"]:focus {
     height: 1vh;  
     display: grid;
     place-items: center;    
+  }
+  .services .logo_separador {
+    width: 7em; height: auto; margin: 1em auto;
   }
 }
 
