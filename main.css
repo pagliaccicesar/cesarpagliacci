@@ -412,7 +412,7 @@ img {
   align-items: center;
 }
 a:hover {
-  cursor: pointer;
+  cursor: pointer;  
 }
 .ref {
   background-color: #000;
