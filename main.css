@@ -1246,7 +1246,7 @@ input[type="email"]:focus {
     font-size: 0.7rem;
   }
   .portfolio {
-    padding-top: 350px;
+    padding-top: 550px;   
   }
   footer {
     height: 1vh;  
@@ -1254,9 +1254,12 @@ input[type="email"]:focus {
     place-items: center;    
   }
   .services .logo_separador {
-    width: 7em; height: auto; margin: 1em auto;
+    width: 7em;
+    height: auto;
+    margin: 1em auto;    
   }
 }
+
 
 
 
