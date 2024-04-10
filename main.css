@@ -363,7 +363,7 @@ img {
 }
 .left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
   box-shadow: 0 0 30px 10px rgb(0, 0, 249);
-  background-color: #ccf;
+  background-color: #ccf;  
 }
 .text {
   transform: translateY(30px);
@@ -378,7 +378,7 @@ img {
 }
 .lefter {
   transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
-  background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);  
+  /*background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);  */
 }
 .left {
   transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
@@ -411,10 +411,11 @@ img {
   justify-content: center;
   align-items: center;
 }
-a:hover {
-  cursor: pointer;  
-}
-.ref {
+/*a:hover {
+  cursor: pointer;
+  z-index: 1000; 
+}*/
+/*.ref {
   background-color: #000;
   background-image: linear-gradient(to bottom, #d80, #c00);
   border-radius: 3px;
@@ -429,7 +430,7 @@ a:hover {
 }
 .ref::first-letter {
   font-size: 12px;
-}
+}*/
 
 /************ seccion sobre mi  ***************/
 
