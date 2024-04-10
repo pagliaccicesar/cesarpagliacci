@@ -1138,15 +1138,33 @@ input[type="email"]:focus {
   margin-bottom: 24px;
   list-style: none;
 }
+
 .inicio {
-  position: fixed;
-  bottom: 4px;
-  right: 34px;
-  /*display: flex;
-  justify-content:right;
-  margin-bottom: 4px;
-  margin-right: 34px;*/
+  display: flex;
+    position: fixed;
+    bottom: 44px;
+    right: 34px;
+    z-index: 100; 
 }
+
+@media (max-height: 600px) and (min-height: 6px)  {  
+  .inicio {
+    
+
+    display: none;
+  /*position: fixed;
+  bottom: 44px;
+  right: 34px;
+  z-index: 100; */
+    
+}}
+/*@media (min-height: 1015px) {  
+  .inicio {
+    position: fixed;
+    bottom: 44px;
+    right: 34px;
+    z-index: 100; 
+}}*/
 
 /***  RESPONSIVE**********************************************************************/
 
