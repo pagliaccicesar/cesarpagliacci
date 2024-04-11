@@ -1140,6 +1140,11 @@ input[type="email"]:focus {
 }
 
 .inicio {
+  padding-left: 5%;
+  color: #0000F9;
+}
+
+/*.inicio {
   display: flex;
     position: fixed;
     bottom: 44px;
@@ -1152,12 +1157,9 @@ input[type="email"]:focus {
     
 
     display: none;
-  /*position: fixed;
-  bottom: 44px;
-  right: 34px;
-  z-index: 100; */
+  
     
-}}
+}}*/
 /*@media (min-height: 1015px) {  
   .inicio {
     position: fixed;
