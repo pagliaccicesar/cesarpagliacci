@@ -929,9 +929,9 @@ img {
   position: relative;
   text-align: center;
   border: 3px solid #000;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  /*-moz-border-radius: 8px;*/
+  /*-webkit-border-radius: 8px;*/
+  /*border-radius: 8px;*/
   overflow: hidden;
   background: url("http://www.seanmichael.me/bathtubgin/wp-content/themes/sean-michael-design/images/fancybox_overlay.png") repeat transparent;
   -moz-transition: all 0.4s ease-in-out;
