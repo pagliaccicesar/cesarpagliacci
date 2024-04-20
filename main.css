@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");  /* nueva letra*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @property --gradient-angle {
   syntax: "<angle>";
@@ -43,7 +44,8 @@ img {
 }
 .description > h1 {
   font-weight: bold; 
-  font-family: "Manrope", sans-serif;  
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  /*font-family: "Manrope", sans-serif; */ 
   font-size: clamp(2.3rem, 5vw, 2.5rem);
   line-height: 1;
   margin-bottom: 20px;
@@ -66,7 +68,8 @@ img {
   -webkit-background-clip: text;
 }
 .description > p {
-  font-family: "Manrope", sans-serif; 
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  /*font-family: "Manrope", sans-serif; */
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -266,7 +269,7 @@ img {
   border-radius: 10% 10% 10% 10%;
 }
 .item:nth-child(6) {
-  background-color: yellow; 
+  background-color: white; 
   border-radius: 50% 50% 50% 50%;
 }
 .item:nth-child(7) {
@@ -541,7 +544,7 @@ section .title2::after {
   margin: 2em auto;
 }*/
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
 
 
 
