@@ -1057,6 +1057,10 @@ h3 {
 
 /** FOOTER AND SECTION - form  **********************************************************************/
 
+main {
+  padding: 5px;
+}
+
 #form {
   position: relative;
   display: flex;
