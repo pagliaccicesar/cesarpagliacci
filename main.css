@@ -911,7 +911,7 @@ img {
 .portfolio .title2::after {
   color:rgb(0, 0, 249);
   background: black;
-  content: "Subidos y en GitHub";
+  content: "Sitios web";
 }
 .portfolio li {
   float: left;
@@ -1275,7 +1275,7 @@ input[type="email"]:focus {
     font-size: 0.7rem;
   }
   .portfolio {
-    padding-top: 550px;   
+    padding-top: 650px;   
   }
   footer {
     height: 1vh;  
