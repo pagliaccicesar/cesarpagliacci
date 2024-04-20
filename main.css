@@ -535,11 +535,24 @@ section .title2::after {
   margin: 10px 0 7px 0;
 }
 
-.services .logo_separador {
+/*.services .logo_separador {
   width: 8em;
   height: auto; 
   margin: 2em auto;
+}*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+
+
+.nombre {
+ 
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+
+
 }
+
+
 
 /*********************** seccion sobre mi   ***********************************/
 
@@ -899,7 +912,7 @@ img {
   background-color: #000;
   margin: 0;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .portfolio h2 {
   color: white;
