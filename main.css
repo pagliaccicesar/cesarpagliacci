@@ -1310,16 +1310,11 @@ input[type="email"]:focus {
     padding: 35px 30px;
   }
 
-  .description > p {
-    font-family: "Inter", "DM Sans", Arial, sans-serif;
-    /*font-family: "Manrope", sans-serif; */
+  .description > p {    
     font-size: 0.9rem;
     line-height: 1.1;
     margin-bottom: 5px;
   }
-
-
-
 
 
   .left, .center, .right, .lefter, .righter {
@@ -1331,6 +1326,7 @@ input[type="email"]:focus {
   }
   .avance {
     font-size: 0.7rem;
+    padding-top: 28px;
   }
   .portfolio {
     padding-top: 520px;   
