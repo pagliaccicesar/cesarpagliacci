@@ -1309,6 +1309,19 @@ input[type="email"]:focus {
     gap: 60px;
     padding: 35px 30px;
   }
+
+  .description > p {
+    font-family: "Inter", "DM Sans", Arial, sans-serif;
+    /*font-family: "Manrope", sans-serif; */
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+
+
+
+
+
   .left, .center, .right, .lefter, .righter {
     width: 60px;
     height: 45px;
