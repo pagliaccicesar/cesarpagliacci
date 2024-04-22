@@ -1311,8 +1311,8 @@ input[type="email"]:focus {
   }
 
   .description > p {    
-    font-size: 0.9rem;
-    line-height: 1.1;
+    font-size: 0.8rem;
+    line-height: 1;
     margin-bottom: 5px;
   }
 
