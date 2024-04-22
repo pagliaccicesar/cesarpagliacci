@@ -939,7 +939,7 @@ img {
 .portfolio {
   background-color: #000;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden; 
   padding: 20px 0;
 }
 .portfolio h2 {
@@ -1320,7 +1320,7 @@ input[type="email"]:focus {
     font-size: 0.7rem;
   }
   .portfolio {
-    padding-top: 340px;   
+    padding-top: 640px;   
   }
   footer {
     height: 1vh;  
