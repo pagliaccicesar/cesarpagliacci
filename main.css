@@ -830,7 +830,7 @@ body {
 /************ certificados  ****************/
 
 :root {
-    --primary: dodgerblue;
+    --primary: rgb(0, 0, 249);
     --secondary: magenta;
     --tertiary: orange;
     --cuarto: yellow;
@@ -904,19 +904,19 @@ body {
     background: transparent;
   }
   .btn1.secondary {
-    background: var(--secondary);
-    border: 2px solid var(--secondary);
+    background: var(--primary);
+    border: 2px solid var(--primary);
   }
   .btn1.secondary:hover {
-    box-shadow: 5px 5px 0 var(--secondary);
+    box-shadow: 5px 5px 0 var(--primary);
     background: transparent;
   }
   .btn1.tertiary {
-    background: var(--tertiary);
-    border: 2px solid var(--tertiary);
+    background: var(--primary);
+    border: 2px solid var(--primary);
   }
   .btn1.tertiary:hover {
-    box-shadow: 5px 5px 0 var(--tertiary);
+    box-shadow: 5px 5px 0 var(--primary);
     background: transparent;
   }
   
@@ -1088,6 +1088,11 @@ h3 {
 main {
   padding: 5px;
 }
+/*.logo_separador {
+  width: 6em;
+  height: auto; 
+  margin: 0 auto;
+}*/
 
 #form {
   position: relative;
