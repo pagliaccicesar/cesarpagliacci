@@ -1302,7 +1302,7 @@ input[type="email"]:focus {
     font-size: 1rem;
   }
   .portfolio {
-    padding-top: 350px;
+    padding-top: 450px;
   }
 }
 
@@ -1323,8 +1323,8 @@ input[type="email"]:focus {
 
 
   .left, .center, .right, .lefter, .righter {
-    width: 60px;
-    height: 45px;
+    width: 50px;
+    height: 40px;
   }
   .explainer {
     font-size: 0.7rem;
@@ -1334,7 +1334,7 @@ input[type="email"]:focus {
     padding-top: 20px;
   }
   .portfolio {
-    padding-top: 520px;   
+    padding-top: 760px;   
   }
   footer {
     height: 1vh;  
