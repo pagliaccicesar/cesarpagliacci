@@ -493,6 +493,7 @@ section .title2::after {
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
+ 
   background: #222;
   text-align: center;
   border-radius: 10px;
@@ -1260,10 +1261,10 @@ input[type="email"]:focus {
     display: grid;
     place-items: center;    
   }
-  .services .serv-content .card {
+  /*.services .serv-content .card {
     height: calc(8.7rem - 10px);
     width: calc(33% - 20px);
-  }
+  }*/
   .services .logo_separador {
     width: 7em;
     height: auto;
