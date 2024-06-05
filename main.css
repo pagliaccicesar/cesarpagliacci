@@ -832,11 +832,11 @@ body {
   @media (max-width: 715px) {
     .btn1-group {
       display: inline-block;      
-      grid-gap: 40px;      
+      grid-gap: 20px;      
     }    
   }
   .btn1-group .btn1:not(:last-child) {
-    margin: 2rem 0.5rem;   
+    margin: 1rem 0.2rem;   
   }
   .btn1 {
     appearance: none;
@@ -1236,14 +1236,11 @@ input[type="email"]:focus {
     gap: 60px;
     padding: 35px 30px;
   }
-
   .description > p {    
     font-size: 0.8rem;
     line-height: 1;
     margin-bottom: 5px;
   }
-
-
   .left, .center, .right, .lefter, .righter {
     width: 50px;
     height: 40px;
