@@ -547,7 +547,7 @@ body {
 
 /* ================ The Timeline ================ */
 .cvitae {
-  padding: 150px 0;
+  padding: 90px 0;
 }
 .cvitae h2 {
   color: white;
@@ -807,7 +807,7 @@ body {
   .sobremi {
     display: grid;
     place-items: center;    
-    min-height: 5vh;
+    min-height: 4vh;
     padding: 0 0;    
     color: var(--text-col);
     background: var(--bg-col);
@@ -1171,9 +1171,13 @@ input[type="email"]:focus {
     padding: 8px 12px;
   }
   .portfolio {
-    padding-top: 150px;
+    padding-top: 30px;
   }
 }
+@media (max-width: 950px) {
+  .cvitae {
+    padding: 290px 0;
+}}
 
 @media (max-width: 865px) {
   .home {
@@ -1224,9 +1228,14 @@ input[type="email"]:focus {
     font-size: 1rem;
   }
   .portfolio {
-    padding-top: 450px;
+    padding-top: 10px;
   }
 }
+
+@media (max-width: 690px) {
+  .cvitae {
+    padding: 800px 0;
+}}
 
 @media (max-width: 460px) {
   .home {
@@ -1253,7 +1262,7 @@ input[type="email"]:focus {
     padding-top: 20px;
   }
   .portfolio {
-    padding-top: 760px;   
+    padding-top: 20px;   
   }
   footer {
     height: 1vh;  
