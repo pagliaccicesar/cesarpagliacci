@@ -1176,7 +1176,7 @@ input[type="email"]:focus {
 }
 @media (max-width: 950px) {
   .cvitae {
-    padding: 290px 0;
+    padding-top: 290px;
 }}
 
 @media (max-width: 865px) {
@@ -1228,7 +1228,7 @@ input[type="email"]:focus {
     font-size: 1rem;
   }
   .portfolio {
-    padding-top: 10px;
+    padding-top: 110px;
   }
 }
 
