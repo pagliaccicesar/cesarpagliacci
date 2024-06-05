@@ -893,7 +893,7 @@ img {
 .portfolio {
   background-color: #000;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 20px 0;
 }
 .portfolio h2 {
@@ -1232,10 +1232,10 @@ input[type="email"]:focus {
   }
 }
 
-@media (max-width: 690px) {
+/*@media (max-width: 690px) {
   .cvitae {
     padding: 800px 0;
-}}
+}}*/
 
 @media (max-width: 460px) {
   .home {
