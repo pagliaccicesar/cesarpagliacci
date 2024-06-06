@@ -312,7 +312,7 @@ img {
   }
 }
 
-/**********************  Seccion AVANCE  ****************************/
+/**********************  Seccion AVANCE o botonera  ****************************/
 
 .avance {
   font-family: "Raleway", sans-serif; 
@@ -423,7 +423,7 @@ img {
   align-items: center;
 }
 
-/************ seccion sobre mi  ***************/
+/************ seccion sobre mi o capacitación  ***************/
 
 main {
   height: 120vh;
@@ -468,7 +468,7 @@ section .title2::after {
   transform: translateX(-50%);
 }
 
-/************************* Service  **************************/
+/************************* Servicios  que hago?  **************************/
 .services{
   font-family: "Poppins", sans-serif;
 }
@@ -1140,7 +1140,7 @@ input[type="email"]:focus {
   color: #0000F9;
 }
 
-/***  RESPONSIVE**********************************************************************/
+/******************  RESPONSIVE******************************/
 
 @media (max-width: 1215px) {
   .description > p {
@@ -1279,8 +1279,6 @@ input[type="email"]:focus {
     margin: 1em auto;    
   }
 }
-
-
 
 
 /*  Media Query  */
