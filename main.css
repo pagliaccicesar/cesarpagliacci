@@ -1127,6 +1127,7 @@ footer {
 input[type="email"]:focus {
   outline-offset: 6px;
 }
+
 .copyright {
   display: flex;
   justify-content:center;
