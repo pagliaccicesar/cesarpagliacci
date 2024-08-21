@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./correo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+   <div class="page">
+        <header id="header">
+            <div class="icono">
+                <img id="header-img" src="https://i.pinimg.com/564x/38/3b/7f/383b7f19e20053abf7815c4cd1d68d43.jpg" alt="logo-page">
+            </div>
+            
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#Features">Features</a></li>
+                        <li><a class="nav-link" href="#how">How It Works</a></li>
+                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    </ul>
+                </nav>
+            
+        </header>
+        
+
+        <div class="container">
+            <section id="formulario">
+                <h1>Handcrafted, home-made masterpieces</h1>
+                <form action="./send_email.php" id="form">
+                    <!--<input id="nombre" name="nombre" type="text" required placeholder="  Enter your name">-->
+                    <input id="email" name="email" type="email" required placeholder="  Enter your email">
+                    <input id="submit" type="submit" value="GET STARTED"><div class="respuesta"><h5></h5></div>
+                </form>
+                
+            </section>
+                <script>                
+                        document.getElementById("form").addEventListener("submit", function(event) {
+                        event.preventDefault();  
+                        
+                        var email = document.getElementById("email").value;
+                        var formData = new FormData();
+                        formData.append("email", email);
+
+                        fetch("send_email.php", {
+                            method: "POST",
+                            body: formData
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            var message = "";
+                            if (data.trim() === "success") {
+                                message = "Nos contactaremos";
+                            } else if (data.trim() === "error") {
+                                message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
+                            } else if (data.trim() === "invalid") {
+                                message = "Por favor, introduce una dirección de correo válida.";
+                            }
+
+                            var msgElement = document.createElement("h5");
+                            msgElement.textContent = message;
+
+                            // Verifica si ya existe un mensaje previo y lo elimina antes de agregar el nuevo
+                            var existingMessage = document.getElementById("responseMessage");
+                            if (existingMessage) {
+                                existingMessage.remove();
+                            }
+
+                            // Agrega un id al nuevo mensaje para su identificación
+                            msgElement.id = "responseMessage";
+                            document.getElementById("formulario").appendChild(msgElement);
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                        });
+                    });
+                </script>
+                 
+                
+            
+                <section id="Features">
+                    <div id="grid">
+                        <div class="icon"><i class="material-icons">star</i></div>
+                        <div class="desc">
+                            <h2>Premium Materials</h2>
+                            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="grid">
+                            <div class="icon"><i class="material-icons">music_note</i></div>
+                            <div class="desc">
+                                <h2>Fast Shipping</h2>
+                                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                            </div>
+                    </div>
+                    <div id="grid">
+                            <div class="icon"><i class="material-icons">speaker</i></div>
+                            <div class="desc">
+                                <h2>Quality Assurance</h2>
+                                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                            </div>
+                    </div>
+                </section>
+            <section id="how">
+                <iframe id="video" src="https://www.youtube.com/embed/yWl8v3TasTE" frameborder="0" ></iframe>
+            </section>
+            
+            <section id="pricing">
+                <div class="product">
+                    <div><h1>Tenor Trombon</h1></div>
+                    <h2 class="precio">$600</h2>
+                    <ul>
+                        <li>material reciclable</li>
+                        <li>sonido embolvente</li>
+                        <li>calidad</li>
+                        <li>precio</li>
+                    </ul>
+                    <button class="btn">SELECT</button>
+                </div>
+                <div class="product">
+                        <div><h1>Bass Trombon</h1></div>
+                        <h2 class="precio">$900</h2>
+                        <ul>
+                            <li>sonido</li>
+                            <li>caja</li>
+                            <li>madera</li>
+                            <li>portable</li>
+                        </ul>
+                        <button class="btn">SELECT</button>
+                </div>
+                    <div class="product">
+                            <div><h1>Valve Trombon</h1></div>
+                            <h2 class="precio">$1200</h2>
+                            <ul>
+                                <li>rapido</li>
+                                <li>calidad</li>
+                                <li>stereo</li>
+                                <li>usabilidad</li>
+                            </ul>
+                            <button class="btn">SELECT</button>
+                    </div>
+            </section>
+            
+            
+            <footer id="encabezado">
+                <ul>
+                    <li ><a href="">Privacy</a></li>
+                    <li ><a href="">Terms</a></li>
+                    <li ><a href="">Contact</a></li>
+                </ul>
+                <span>
+                    Copyrigth 2019,Original Stereos
+                </span>
+            </footer>
+
+        </div>
+
+    </div>
+
+
+   
+    
+</body>
+</html>
+
+<!--
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($nombre)) {
+        $to = "pagliaccicesar@gmail.com";  // Reemplaza con tu dirección de correo
+        $subject = "Nuevo contacto";
+        $message = "Nombre: " . $nombre . "\nCorreo: " . $email;
+        $headers = "From: www.cesarpagliacci.com.ar";
+
+        if (mail($to, $subject, $message, $headers)) {
+            echo "success";
+        } else {
+            echo "error";
+        }
+    } else {
+        echo "invalid";
+    }
+}
+?>
+
+/*document.getElementById("form").addEventListener("submit", function(event) {
+                    event.preventDefault(); 
+                    
+                    var nombre = document.getElementById("nombre").value;
+                    var email = document.getElementById("email").value;
+                    var formData = new FormData();
+                    formData.append("nombre", nombre);
+                    formData.append("email", email);
+
+                    fetch("send_email.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        var message = "";
+                        if (data === "success") {
+                            message = "Nos contactaremos";
+                        } else if (data === "error") {
+                            message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
+                        } else if (data === "invalid") {
+                            message = "Por favor, introduce un nombre y una dirección de correo válidos.";
+                        }
+
+                        var msgElement = document.createElement("p");
+                        msgElement.textContent = message;
+                        document.getElementById("formulario").appendChild(msgElement);
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
+                });*/
+
+
+
+
+
+-->

@@ -32,7 +32,7 @@ var slider = tns({
     origin: "bottom",
   });
   
-  // Form
+ /* // Form
   
   const emailId = document.getElementById("email-id");
   const error = document.getElementById("error");
@@ -91,16 +91,21 @@ var slider = tns({
     setTimeout(type, speed);
   }
   
-  type();
+  type();*/
 
 
-  //   js de footer
+
+  
+
+
+
+ /* //   js de footer
 
   document.querySelector('#contact-form').addEventListener('submit', (e) => {
     e.preventDefault();
     e.target.elements.name.value = '';
     e.target.elements.email.value = '';
     e.target.elements.message.value = '';
-  });
+  });*/
 
 
