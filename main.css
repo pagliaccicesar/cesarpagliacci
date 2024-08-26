@@ -19,8 +19,8 @@ html {
 }
 img {
   width: 100%;
-  pointer-events: none;
-  user-select: none;
+  /*pointer-events: none;
+  user-select: none;*/
 }
 
 /************* SECTION - HOME **********************/
@@ -35,6 +35,57 @@ img {
   overflow: hidden;
   padding: 35px 80px;
 }
+
+/*#lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  
+}
+#lang-switch img {  
+  display: inline;
+  width: 26px;
+  height: 26px;
+  opacity:1;
+  transition: all .5s;
+  margin: auto 3px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 500;  
+}
+
+#lang-switch img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 500;
+}
+.fr_lang, .en_lang {
+    display: none;
+    transition: display .5s;
+  }
+  
+ 
+  .active-lang {
+    display: flex !important;
+    transition: display .5s;
+  }
+  
+  .active-flag {
+    transition: all .5s;
+    opacity: 1 !important;
+  }
+  #lang-switch {
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+  }*/
+
+
+
 .logo {
   width: 32%;
   height: auto

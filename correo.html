@@ -31,20 +31,22 @@
             <section id="formulario">
                 <h1>Handcrafted, home-made masterpieces</h1>
                 <form action="./send_email.php" id="form">
-                    <!--<input id="nombre" name="nombre" type="text" required placeholder="  Enter your name">-->
+                    <input id="nombre" name="nombre" type="text" required placeholder="  Enter your name">
                     <input id="email" name="email" type="email" required placeholder="  Enter your email">
-                    <input id="submit" type="submit" value="GET STARTED"><div class="respuesta"><h5></h5></div>
+                    <input id="submit" type="submit" value="ENVIAR DATOS">                   
                 </form>
                 
             </section>
-                <script>                
+                <!--<script>                
                         document.getElementById("form").addEventListener("submit", function(event) {
-                        event.preventDefault();  
-                        
+                        event.preventDefault();
+
+                        var nombre = document.getElementById("nombre").value;
                         var email = document.getElementById("email").value;
                         var formData = new FormData();
-                        formData.append("email", email);
-
+                        formData.append("nombre", nombre);
+                        formData.append("email", email);                       
+                       
                         fetch("send_email.php", {
                             method: "POST",
                             body: formData
@@ -61,15 +63,18 @@
                             }
 
                             var msgElement = document.createElement("h5");
-                            msgElement.textContent = message;
-
-                            // Verifica si ya existe un mensaje previo y lo elimina antes de agregar el nuevo
+                            msgElement.textContent = message;                                                
+                            msgElement.style.position = "relative";
+                            msgElement.style.fontsize = "large";
+                            msgElement.style.color = "blue";
+                            msgElement.style.top = "20px";
+                            msgElement.style.left = "25px";
+                           
                             var existingMessage = document.getElementById("responseMessage");
                             if (existingMessage) {
                                 existingMessage.remove();
                             }
-
-                            // Agrega un id al nuevo mensaje para su identificación
+                           
                             msgElement.id = "responseMessage";
                             document.getElementById("formulario").appendChild(msgElement);
                         })
@@ -77,9 +82,48 @@
                             console.error("Error:", error);
                         });
                     });
+                </script>-->
+                <script>
+                    document.getElementById("form").addEventListener("submit", function(event) {
+                    event.preventDefault();  // Previene el envío del formulario para poder manejarlo con JavaScript
+
+                    var nombre = document.getElementById("nombre").value;
+                    var email = document.getElementById("email").value;
+                    var formData = new FormData();
+                    formData.append("nombre", nombre);
+                    formData.append("email", email);
+
+                    fetch("send_email.php", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        var message = "";
+                        if (data.trim() === "success") {
+                            message = "Nos contactaremos";
+                            document.getElementById("submit").value = message;  // Cambia el texto del botón a "Nos contactaremos"
+                        } else if (data.trim() === "error") {
+                            message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
+                            alert(message); // Muestra el mensaje de error como una alerta
+                        } else if (data.trim() === "invalid") {
+                            message = "Por favor, introduce una dirección de correo válida.";
+                            alert(message); // Muestra el mensaje de dirección inválida como una alerta
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
+                });
+
                 </script>
-                 
                 
+                
+                
+              
+                
+                                            
+                                            
             
                 <section id="Features">
                     <div id="grid">
@@ -223,9 +267,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         console.error("Error:", error);
                     });
                 });*/
+-->
 
+<!--
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $to = "pagliaccicesar@gmail.com"; 
+        $subject = "Nuevo contacto";
+        $message = "Se ha registrado un nuevo correo: " . $email;
+        $headers = "From: www.cesarpagliacci.com.ar";
 
-
-
+        if (mail($to, $subject, $message, $headers)) {
+            echo "success";
+        } else {
+            echo "error";
+        }
+    } else {
+        echo "invalid";
+    }
+}
+?>
 -->
