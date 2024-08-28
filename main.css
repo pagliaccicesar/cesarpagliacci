@@ -36,54 +36,49 @@ img {
   padding: 35px 80px;
 }
 
-/*#lang-switch {
-  position: absolute;
-  top: 10px;
-  right: 17px;
-  
-}
-#lang-switch img {  
-  display: inline;
-  width: 26px;
-  height: 26px;
-  opacity:1;
+/******  idionas   ******/
+
+#lang-switch img {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
   transition: all .5s;
-  margin: auto 3px;
+  margin: 13px 3px;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  z-index: 500;  
 }
 
 #lang-switch img:hover {
   cursor: pointer;
-  opacity: 0.5;
-  z-index: 500;
+  opacity: 1;
 }
-.fr_lang, .en_lang {
-    display: none;
-    transition: display .5s;
-  }
-  
- 
-  .active-lang {
-    display: flex !important;
-    transition: display .5s;
-  }
-  
-  .active-flag {
-    transition: all .5s;
-    opacity: 1 !important;
-  }
-  #lang-switch {
-    width: 100%;
-    background-color: #151515;
-    display: flex;
-    justify-content: end;
-    position: fixed;
-  }*/
+.en_lang {
+  display: none;
+}
+.it_lang {
+  display: none;
+}
 
+
+/* Language */
+.active-lang {
+  display: flex !important;
+  transition: display .5s;
+}
+
+.active-flag {  
+  transition: all .5s;
+  opacity: 1 !important;
+}
+
+#lang-switch {
+  width: 100%;  
+  display: flex;
+  justify-content: left; 
+  z-index: 1000;
+}
 
 
 .logo {
@@ -1625,7 +1620,16 @@ input[type="email"]:focus {
   .description > p {
     font-size: 1.1rem;
   }
-
+  #lang-switch {
+    width: 100%;    
+    display: flex;
+    justify-content: center;   
+    z-index: 1000;
+  }
+  #lang-switch img {
+    width: 21px;
+    height: 21px;
+  }
   #form {
     justify-content: center;
   }

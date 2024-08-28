@@ -1,3 +1,58 @@
+//  idiomas
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtén los elementos de la bandera y los textos
+  const spanishFlag = document.querySelector('.sp');
+  const englishFlag = document.querySelector('.en');
+  const italianFlag = document.querySelector('.it');
+  const spanishTextElements = document.querySelectorAll('.sp_lang');
+  const englishTextElements = document.querySelectorAll('.en_lang');
+  const italianTextElements = document.querySelectorAll('.it_lang');
+
+  // Función para cambiar a español
+  function switchToSpanish() {
+      spanishTextElements.forEach(el => el.style.display = 'block'); // Muestra texto en español
+      englishTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en inglés
+      italianTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en iitaliano
+      spanishFlag.style.opacity = 1; // Cambia la opacidad de la bandera española a 1
+      englishFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera inglesa a 0.5
+      italianFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera italiana a 0.5
+  }
+
+  // Función para cambiar a inglés
+  function switchToEnglish() {
+      spanishTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en español
+      englishTextElements.forEach(el => el.style.display = 'block'); // Muestra texto en inglés
+      italianTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en iitaliano
+      spanishFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera española a 0.5
+      englishFlag.style.opacity = 1; // Cambia la opacidad de la bandera inglesa a 1
+      italianFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera italiana a 0.5
+  }
+
+  // Función para cambiar a italiano
+  function switchToItalian() {
+    spanishTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en español    
+    englishTextElements.forEach(el => el.style.display = 'none'); // Oculta texto en inglés
+    italianTextElements.forEach(el => el.style.display = 'block'); // Muestra texto en italiano
+    spanishFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera española a 0.5
+    englishFlag.style.opacity = 0.5; // Cambia la opacidad de la bandera inglesa a 0.5
+    italianFlag.style.opacity = 1; // Cambia la opacidad de la bandera italiana a 1
+}
+
+  // Event listeners para los clics en las banderas
+  spanishFlag.addEventListener('click', switchToSpanish);
+  englishFlag.addEventListener('click', switchToEnglish);
+  italianFlag.addEventListener('click', switchToItalian);
+
+  // Establece el idioma predeterminado a español al cargar la página
+  switchToSpanish();
+});
+
+
+
+
+
+
+
 // Tiny Slider
 
 var slider = tns({
