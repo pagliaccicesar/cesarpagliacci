@@ -320,95 +320,93 @@
           <div class="contact-form">
             <span class="circle one"></span>
             <span class="circle two"></span>
-  
-            <form action="form.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">
+
+            <!--<form action="form.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">  -->
+            <form action="enviarcorreo.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">
               <!--<h4 class="title">Escribime:</h4>-->
               <img src="https://www.iconfinder.com/search/icons?family=font-awesome-regular" alt="">
               <div class="input-container">
                 <input type="text" name="name" class="input" />
-                <label for="" class="sp_lang">Nombre</label>
-                <label for="" class="en_lang">Name</label>
-                <label for="" class="it_lang">Nome</label>
+                <label for="" id="nombre" class="sp_lang">Nombre</label>
+                <label for="" id="nombre" class="en_lang">Name</label>
+                <label for="" id="nombre" class="it_lang">Nome</label>
                 <span>Username</span>
               </div>
               <div class="input-container">
-                <input type="email" name="email" class="input" />
+                <input id="email" type="email" name="email" class="input" />
                 <label for="">Email</label>
                 <span>Email</span>
               </div>
               <div class="input-container">
                 <input type="tel" name="phone" class="input" />
-                <label for="" class="sp_lang">Telefono</label>
-                <label for="" class="en_lang">Phone</label>
-                <label for="" class="it_lang">Telefono</label>
+                <label id="tel" for="" class="sp_lang">Telefono</label>
+                <label id="tel" for="" class="en_lang">Phone</label>
+                <label id="tel" for="" class="it_lang">Telefono</label>
                 <span>Phone</span>
               </div>
               <div class="input-container textarea">
                 <textarea name="message" class="input"></textarea>
-                <label for="" class="sp_lang">Mensaje</label>
-                <label for="" class="en_lang">Message</label>
-                <label for="" class="it_lang">Messaggio</label>
+                <label id="mje" for="" class="sp_lang">Mensaje</label>
+                <label id="mje" for="" class="en_lang">Message</label>
+                <label id="mje" for="" class="it_lang">Messaggio</label>
                 <span>Message</span>
               </div>
-              <input type="submit" value="Send" class="btn" />
+              <input id="submit" type="submit" value="&#10148;" style="font-size:large;" class="btn" />              
             </form>
           </div>
         </div>
-      </div>
-         
-        <!--<section class="services" id="final">          
-          <div class="max-width">      
-            
-            <h2 style="color:rgb(0, 0, 249); font-family: Inter, DM Sans, Arial, sans-serif; font-weight: 500; text-align:center; padding-bottom: 30px;">Contacto</h2>
-
-            <div class="serv-content" id="footer">
-              
-              <div class="card" style="height: calc(9.7rem - 10px)" >                
-                <div class="box">                   
-                  <a href="https://wa.me/5491159483403" target="_blank"><i class="fa fa-whatsapp" style="font-size:48px;"></i></a>                
-                  <p>+54 9 11 59483403</p>              
-                </div>
-              </div>
-      
-              <div class="card" style="height: calc(9.7rem - 10px)">               
-                <div class="box">
-                  <a href="https://github.com/pagliaccicesar" target="_blank"><i class="fa fa-github" style="font-size:48px"></i></a>                                
-                  <p>pagliaccicesar</p>
-                </div>               
-              </div>
-
-              <div class="card" style="height: calc(9.7rem - 10px)" >
-                <div class="box">
-                  <a href="https://www.linkedin.com/in/cesarpagliacci/" target="_blank"><i class="fa fa-linkedin" style="font-size:48px"></i></a>                 
-                  <p>cesar alejandro pagliacci</p>
-                </div>
-              </div>              
-            </div>
-          </div>
-          <br>
-
-          <footer>        
-            <form id="form" autocomplete="off" action="https://formsubmit.co/info@cesarpagliacci.com.ar" method="POST">
-              <input
-                type="email"
-                id="email-id"
-                name="email"                
-                aria-label="email adress"
-                placeholder=""
-                required
-                oninput="checkEmpty()" />
-              <button type="submit" class="btn" aria-label="submit">
-                <span>Ingresa tu email</span>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </button>
-              <input type="hidden" name="_next" value="https://www.cesarpagliacci.com.ar/#footer">  
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_subject" value="Email de cliente en espera!">                    
-            </form>         
-
-          </footer>
-        </section>-->
+      </div>         
+        
       </section>
+
+      <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Previene el envío del formulario para poder manejarlo con JavaScript
+
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+        var tel = document.getElementById("tel").value;
+        var mje = document.getElementById("mje").value;
+        var formData = new FormData();
+        formData.append("nombre", nombre);
+        formData.append("email", email);
+        formData.append("tel", tel);
+        formData.append("mje", mje);
+
+        fetch("send_email.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            var message = "";
+            if (data.trim() === "success") {
+                message = "Me contacto!";
+                document.getElementById("submit").value = message;  // Cambia el texto del botón a "Nos contactaremos"
+            } else if (data.trim() === "error") {
+                message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
+                alert(message); // Muestra el mensaje de error como una alerta
+            } else if (data.trim() === "invalid") {
+                message = "Por favor, introduce una dirección de correo válida.";
+                alert(message); // Muestra el mensaje de dirección inválida como una alerta
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 
       <div class="copyright">
           <h5>&copy; 2022</h5><h5 style="color:rgb(63, 63, 255)"> Cesar Pagliacci</h5><h5>Desarrollo Web</h5>
