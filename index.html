@@ -321,97 +321,90 @@
             <span class="circle one"></span>
             <span class="circle two"></span>
 
-            <!--<form action="form.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">  -->
+
+
             <form action="enviarcorreo.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">
-              <!--<h4 class="title">Escribime:</h4>-->
               <img src="https://www.iconfinder.com/search/icons?family=font-awesome-regular" alt="">
               <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="" id="nombre" class="sp_lang">Nombre</label>
-                <label for="" id="nombre" class="en_lang">Name</label>
-                <label for="" id="nombre" class="it_lang">Nome</label>
-                <span>Username</span>
+                  <input type="text" name="name" id="nombre" class="input" />
+                  <label for="" class="sp_lang">Nombre</label>
+                  <label for="" class="en_lang">Name</label>
+                  <label for="" class="it_lang">Nome</label>
+                  <span>Username</span>
               </div>
               <div class="input-container">
-                <input id="email" type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
+                  <input id="email" type="email" name="email" class="input" />
+                  <label for="">Email</label>
+                  <span>Email</span>
               </div>
               <div class="input-container">
-                <input type="tel" name="phone" class="input" />
-                <label id="tel" for="" class="sp_lang">Telefono</label>
-                <label id="tel" for="" class="en_lang">Phone</label>
-                <label id="tel" for="" class="it_lang">Telefono</label>
-                <span>Phone</span>
+                  <input type="tel" name="phone" id="tel" class="input" />
+                  <label for="" class="sp_lang">Telefono</label>
+                  <label for="" class="en_lang">Phone</label>
+                  <label for="" class="it_lang">Telefono</label>
+                  <span>Phone</span>
               </div>
               <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label id="mje" for="" class="sp_lang">Mensaje</label>
-                <label id="mje" for="" class="en_lang">Message</label>
-                <label id="mje" for="" class="it_lang">Messaggio</label>
-                <span>Message</span>
+                  <textarea name="message" id="mje" class="input"></textarea>
+                  <label for="" class="sp_lang">Mensaje</label>
+                  <label for="" class="en_lang">Message</label>
+                  <label for="" class="it_lang">Messaggio</label>
+                  <span>Message</span>
               </div>
               <input id="submit" type="submit" value="&#10148;" style="font-size:large;" class="btn" />              
-            </form>
+          </form>
           </div>
-        </div>
-      </div>         
-        
-      </section>
+        </section>
+          
+        <script>
+          document.getElementById("contactForm").addEventListener("submit", function(event) {
+              event.preventDefault();  // Previene el envío del formulario para poder manejarlo con JavaScript
+          
+              var nombre = document.getElementById("nombre").value;
+              var email = document.getElementById("email").value;
+              var tel = document.getElementById("tel").value;
+              var mje = document.getElementById("mje").value;
+              var formData = new FormData();
+              formData.append("nombre", nombre);
+              formData.append("email", email);
+              formData.append("tel", tel);
+              formData.append("mje", mje);
+          
+              fetch("enviarcorreo.php", {
+                  method: "POST",
+                  body: formData
+              })
+              .then(response => response.text())
+              .then(data => {
+                  var message = "";
+                  if (data.trim() === "success") {
+                      message = "Thank you / Gracias";
+                      document.getElementById("submit").value = message;  // Cambia el texto del botón
+          
+                      // Limpia los campos del formulario
+                      document.getElementById("nombre").value = "";
+                      document.getElementById("email").value = "";
+                      document.getElementById("tel").value = "";
+                      document.getElementById("mje").value = "";
+                  } else if (data.trim() === "error") {
+                      message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
+                      alert(message); // Muestra el mensaje de error como una alerta
+                  } else if (data.trim() === "invalid") {
+                      message = "Por favor, introduce una dirección de correo válida.";
+                      alert(message); // Muestra el mensaje de dirección inválida como una alerta
+                  }
+              })
+              .catch(error => {
+                  console.error("Error:", error);
+              });
+          });
+        </script>
 
-      <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();  // Previene el envío del formulario para poder manejarlo con JavaScript
-
-        var nombre = document.getElementById("nombre").value;
-        var email = document.getElementById("email").value;
-        var tel = document.getElementById("tel").value;
-        var mje = document.getElementById("mje").value;
-        var formData = new FormData();
-        formData.append("nombre", nombre);
-        formData.append("email", email);
-        formData.append("tel", tel);
-        formData.append("mje", mje);
-
-        fetch("send_email.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.text())
-        .then(data => {
-            var message = "";
-            if (data.trim() === "success") {
-                message = "Me contacto!";
-                document.getElementById("submit").value = message;  // Cambia el texto del botón a "Nos contactaremos"
-            } else if (data.trim() === "error") {
-                message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
-                alert(message); // Muestra el mensaje de error como una alerta
-            } else if (data.trim() === "invalid") {
-                message = "Por favor, introduce una dirección de correo válida.";
-                alert(message); // Muestra el mensaje de dirección inválida como una alerta
-            }
-        })
-        .catch(error => {
-            console.error("Error:", error);
-        });
-    });
-
-    </script>
-
-
-
-
-
-
-
-
-
-
+            
 
       <div class="copyright">
           <h5>&copy; 2022</h5><h5 style="color:rgb(63, 63, 255)"> Cesar Pagliacci</h5><h5>Desarrollo Web</h5>
-          <div class="inicio"><a href="#"> <i class="fas fa-home" style="color:rgb(63, 63, 255)"></i> </a></div>
-          <div class="inicio"><a href="./correo.html"> <i class="fas fa-home" style="color:black"></i> </a></div>    
+          <div class="inicio"><a href="#"> <i class="fas fa-home" style="color:rgb(63, 63, 255)"></i> </a></div>          
       </div>
 
     <script src="./tabs.js"></script>
