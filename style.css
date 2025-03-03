@@ -564,10 +564,7 @@ section .title2::after {
   margin: 10px 0 7px 0;
 }
 .services .serv-content .card p {
-  font-size: 17px;
-}
-.nombre { 
-  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  font-size: 15px;
 }
 
 /*********************** seccion sobre mi   ***********************************/
@@ -1479,17 +1476,11 @@ textarea:hover {
     line-height: 1;
     margin-bottom: 5px;
   }
-  .left, .center, .right, .lefter, .righter {
-    width: 50px;
-    height: 40px;
-  }
+  
   .explainer {
     font-size: 0.7rem;
   }
-  .avance {
-    font-size: 0.7rem;
-    padding-top: 20px;
-  }
+  
   .portfolio {
     padding-top: 20px;   
   }
@@ -1610,7 +1601,7 @@ textarea:hover {
       font-size: 32px;
     }    
     .services .serv-content .card {
-      width: 100%;
+      width: 100%;     
     }
   }
   
