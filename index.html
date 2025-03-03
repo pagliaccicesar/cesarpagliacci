@@ -11,7 +11,7 @@
     <meta name="author" content="Cesar Pagliacci">
     <title>Cesar Pagliacci DevWeb</title>
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,33 +23,34 @@
 
       <section class="home" id="home">       
           <div class="description">
-            <span><img class="logo" src="./img/logosinfondo.png" alt="logo Cesar Pagliacci Desarrollo web"></span>
-              <h1 class="title">
-                  <span class="gradient-text">Cesar Pagliacci</span><div id="shimmerWave">&nbsp;Desarrollo web</div>             
-              </h1>
+                <span><img class="logo" src="./img/logosinfondo.png" alt="Cesar Pagliacci Desarrollo web"></span>
+                <h1 class="title">
+                    <span class="gradient-text">Cesar Pagliacci</span><div id="shimmerWave">&nbsp;Desarrollo web</div>             
+                </h1>                
 
-              <div id="lang-switch">     
-                <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Spain-Flag.png" class="sp">
-                <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png" class="en">
-                <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Italy-Flag.png" class="it">
-              </div>
+                <!--<p class="paragraph" > -->
+                <p class="sp_lang">               
+                  Soy un desarrollador web independiente, diseño sitios y aplicaciones funcionales y 
+                  de navegación sencilla para tu emprendimiento. 
+                </p>
+                <p class="en_lang">               
+                  I am a freelance web developer, I design functional sites and applications and 
+                  Simple navigation for your business. 
+                </p>
+                <p class="it_lang">
+                  Sono uno sviluppatore web freelance, progetto siti e applicazioni funzionali e 
+                  Navigazione semplice per la tua attività.
+                </p>
 
-              <!--<p class="paragraph" > -->
-              <p class="sp_lang">               
-                Soy un desarrollador web independiente, diseño sitios y aplicaciones funcionales y 
-                de navegación sencilla para tu emprendimiento. 
-              </p>
-              <p class="en_lang">               
-                I am a freelance web developer, I design functional sites and applications and 
-                Simple navigation for your business. 
-              </p>
-              <p class="it_lang">
-                Sono uno sviluppatore web freelance, progetto siti e applicazioni funzionali e 
-                Navigazione semplice per la tua attività.
-              </p>
-
-              
-              
+                <div id="lang-switch">     
+                  <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Spain-Flag.png" class="sp">
+                  <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/United-Kingdom-flag.png" class="en">
+                  <img src="https://cdn3.iconfinder.com/data/icons/finalflags/256/Italy-Flag.png" class="it">
+                </div>
+                
+                <div class="frame"><a href="#main" class="sp_lang"><button class="custom-btn btn-7">Saber más</button></a></div>
+                <div class="frame"><a href="#main" class="en_lang"><button class="custom-btn btn-7">Know more</button></a></div>
+                <div class="frame"><a href="#main" class="it_lang"><button class="custom-btn btn-7">Sapere piú</button></a></div>
              
           </div>
     
@@ -66,12 +67,21 @@
             <img class="item" src="./img/php.png" style="--i: 9" alt="Cesar Pagliacci">
            
             <span class="item" style="--i: 8"></span>
-            <img class="item" src="./img/bootstrap-5-logo-icon.png" style="--i: 11; " alt="Cesar Pagliacci" />            
-            <img class="item" src="./img/desktop-mobile-icon.png" style="--i: 6" alt="Cesar Pagliacci" />            
+            <img class="item" src="./img/bootstrap_logo.png" style="--i: 11; " alt="Cesar Pagliacci" />            
+            <img class="item" src="./img/clipart2706458.png" style="--i: 6" alt="Cesar Pagliacci" />            
           </div>
+
+
+         
+          
+          
+
+
       </section>
 
-      <section class="avance">
+      
+
+      <!--<section class="avance">
             <div class="all">
               
               <div class="lefter" style="background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);">             
@@ -90,7 +100,7 @@
               <div class="righter">
                 <a href="#formulario"><div class="sp_lang" id="text">Contacto</div><div class="en_lang" id="text">Contact</div><div class="it_lang" id="text">Contatto</div>
               </div></a>
-      </section>      
+      </section>   -->   
 
        <!-- Servicios    que brindo ? -->
       <main>
@@ -216,10 +226,12 @@
             <h2 class="title2" id="portfolio">Portfolio</h2>
             
             <ul >
+              
+
               <li class="group-1">
                 <figure>                  
-                  <img src="./img/sacha1.png" alt="Sacha Academia" />
-                  <h3>sacha academia</h3><figcaption><a href="https://pagliaccicesar.github.io/sachaacademia/" target="_blank">link</a></figcaption>                  
+                  <img src="./img/chicone.png" alt="Chicone" />
+                  <h3>Chicone</h3><figcaption><a href="https://chicone.com.ar" target="_blank">link</a></figcaption>                  
                 </figure>
               </li>
               <li class="group-2">
@@ -253,158 +265,117 @@
                   <h3>notte musica</h3><figcaption><a href="https://pagliaccicesar.github.io/notteweb/" target="_blank">link</a></figcaption>
                 </figure>
               </li>
-              <li class="group-3">
+              
+              <li class="group-1">
                 <figure>                  
                   <img src="./img/dunas2.png" alt="Dunas" />
                   <h3>Dunas Sur Hotel</h3><figcaption><a href="https://pagliaccicesar.github.io/dunas_sur/" target="_blank">link</a></figcaption>                  
                 </figure>
               </li>
+             
+              
               
             </ul>
           </div>
       </section>
-     
-      <section id="formulario">
 
-        <div class="container" id="contact">       
-        <img src="img/shape.png" class="square" alt="Cesar Pagliacci" />
-        <div class="form">
-          <div class="contact-info">
-            
-            <h4 class="title" class="en_lang">Contact</h4>
-            
+     
+     <div id="social">
+          <div class="social-media">
+                  <p class="sp_lang">Conectemos :</p>
+                  <p class="en_lang">Let's connect :</p>
+                  <p class="it_lang">Connettiamoci :</p>
+              <div class="social-icons">
+                    <a href="https://wa.me/5491159483403?text=%C2%A1Te+escribo+desde+tu+web!" target="_blank">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/pagliaccicesar" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/cesarpagliaccidevweb/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cesarpagliacci/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+              </div>
+          </div>
+      </div>
+
+      <div class="frase_contacto">
             <p class="sp_lang" id="textual">Tenes alguna pregunta o proyecto en mente? Escribime y hablemos!</p>
             <p class="en_lang" id="textual">Do you have any questions or projects in mind? Write me and let's talk!</p>
             <p class="it_lang" id="textual">Hai qualche domanda o progetto in mente? Scrivimi e parliamo!</p>
-  
-            <div class="info">
-              <div class="information">
-                <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp  
-                <p>San Telmo, Buenos Aires, Argentina</p>
-              </div>
-              <div class="information">
-                <i class="fas fa-envelope"></i> &nbsp &nbsp
-                <p>info@cesarpagliacci.com.ar</p>
-              </div>
-              <div class="information">
-                <i class="fab fa-whatsapp"></i>&nbsp&nbsp
-                <p>+54 9 11 5948 3403</p>
-              </div>
-              <div class="information">
-                <i class="fab fa-whatsapp"></i>&nbsp&nbsp
-                <p>+34 607 37 00 38</p>
-              </div>             
-            </div>
-  
-            <div class="social-media">
-              <p class="sp_lang">Conectemos :</p>
-              <p class="en_lang">Let's connect :</p>
-              <p class="it_lang">Connettiamoci :</p>
-              <div class="social-icons">
-                <!--<a href="https://wa.me/5491159483403?text=%C2%A1Te+escribo+desde+tu+web!" target="_blank">
-                  <i class="fab fa-whatsapp"></i>
-                </a>-->
-                <a href="https://github.com/pagliaccicesar" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/cesarpagliaccidevweb/" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/cesarpagliacci/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="contact-form">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
+      </div>
 
-
-
-            <form action="enviarcorreo.php" method="post" name="contactform" id="contactForm" novalidate autocomplete="off">
-              <img src="https://www.iconfinder.com/search/icons?family=font-awesome-regular" alt="">
-              <div class="input-container">
-                  <input type="text" name="name" id="nombre" class="input" />
-                  <label for="" class="sp_lang">Nombre</label>
-                  <label for="" class="en_lang">Name</label>
-                  <label for="" class="it_lang">Nome</label>
-                  <span>Username</span>
-              </div>
-              <div class="input-container">
-                  <input id="email" type="email" name="email" class="input" />
-                  <label for="">Email</label>
-                  <span>Email</span>
-              </div>
-              <div class="input-container">
-                  <input type="tel" name="phone" id="tel" class="input" />
-                  <label for="" class="sp_lang">Telefono</label>
-                  <label for="" class="en_lang">Phone</label>
-                  <label for="" class="it_lang">Telefono</label>
-                  <span>Phone</span>
-              </div>
-              <div class="input-container textarea">
-                  <textarea name="message" id="mje" class="input"></textarea>
-                  <label for="" class="sp_lang">Mensaje</label>
-                  <label for="" class="en_lang">Message</label>
-                  <label for="" class="it_lang">Messaggio</label>
-                  <span>Message</span>
-              </div>
-              <input id="submit" type="submit" value="&#10148;" style="font-size:large;" class="btn" />              
+      <section id="formulario">
+          <form id="form" class="topBefore">
+              <input id="name" name="name" type="text" placeholder="NAME" required>
+              <input id="email" name="email" type="email" placeholder="E-MAIL" required>
+              <textarea id="message" name="message" placeholder="MESSAGE" required></textarea>
+              <input id="submit" type="submit" value="Send!">
           </form>
-          </div>
-        </section>
-          
-        <script>
-          document.getElementById("contactForm").addEventListener("submit", function(event) {
-              event.preventDefault();  // Previene el envío del formulario para poder manejarlo con JavaScript
-          
-              var nombre = document.getElementById("nombre").value;
-              var email = document.getElementById("email").value;
-              var tel = document.getElementById("tel").value;
-              var mje = document.getElementById("mje").value;
-              var formData = new FormData();
-              formData.append("nombre", nombre);
-              formData.append("email", email);
-              formData.append("tel", tel);
-              formData.append("mje", mje);
-          
-              fetch("enviarcorreo.php", {
-                  method: "POST",
-                  body: formData
-              })
-              .then(response => response.text())
-              .then(data => {
-                  var message = "";
-                  if (data.trim() === "success") {
-                      message = "Thank you / Gracias";
-                      document.getElementById("submit").value = message;  // Cambia el texto del botón
-          
-                      // Limpia los campos del formulario
-                      document.getElementById("nombre").value = "";
-                      document.getElementById("email").value = "";
-                      document.getElementById("tel").value = "";
-                      document.getElementById("mje").value = "";
-                  } else if (data.trim() === "error") {
-                      message = "Hubo un error al enviar el correo. Inténtalo de nuevo.";
-                      alert(message); // Muestra el mensaje de error como una alerta
-                  } else if (data.trim() === "invalid") {
-                      message = "Por favor, introduce una dirección de correo válida.";
-                      alert(message); // Muestra el mensaje de dirección inválida como una alerta
-                  }
-              })
-              .catch(error => {
-                  console.error("Error:", error);
-              });
-          });
-        </script>
+          <script>
+                document.getElementById("form").addEventListener("submit", function (e) {
+                e.preventDefault();
 
-            
+                const formData = new FormData(this);
 
+                fetch("sendMail.php", {
+                    method: "POST",
+                    body: formData,
+                })
+                  .then(response => response.json())
+                  .then(data => {
+                      if (data.success) {
+                          showAlert("Me contactare a la brevedad", "violet");
+                          this.reset(); // Limpia los campos del formulario
+                      } else {
+                          showAlert(data.message || "Ocurrió un error al enviar el mensaje.", "red");
+                      }
+                  })
+                  .catch(error => {
+                      showAlert("Error de conexión.", "red");
+                      console.error(error);
+                  });
+                });
+
+                // Función para mostrar el alert personalizado
+                function showAlert(message, backgroundColor) {
+                    const alertDiv = document.createElement("div");
+                    alertDiv.style.position = "fixed";
+                    alertDiv.style.top = "50%";
+                    alertDiv.style.left = "50%";
+                    alertDiv.style.transform = "translate(-50%, -50%)";
+                    alertDiv.style.backgroundColor = backgroundColor;
+                    alertDiv.style.color = "white";
+                    alertDiv.style.padding = "20px";
+                    alertDiv.style.borderRadius = "10px";
+                    alertDiv.style.textAlign = "center";
+                    alertDiv.style.fontSize = "1.5em";
+                    alertDiv.style.zIndex = "1000";
+                    alertDiv.textContent = message;
+
+                    document.body.appendChild(alertDiv);
+
+                    // Remover el alert después de 3 segundos
+                    setTimeout(() => {
+                        alertDiv.remove();
+                    }, 3000);
+                }
+
+          </script>
+        
+      </section>
+   
+      <div class="footer-firma">
+        <h5>&copy; 2022</h5><h5 style="color:rgb(63, 63, 255)"> Cesar Pagliacci</h5><h5>Desarrollo Web</h5>
+        <div class="inicio"><a href="#"> <i class="fas fa-home" style="color:rgb(63, 63, 255)"></i> </a></div>   
+
+      </div>     
       <div class="copyright">
-          <h5>&copy; 2022</h5><h5 style="color:rgb(63, 63, 255)"> Cesar Pagliacci</h5><h5>Desarrollo Web</h5>
-          <div class="inicio"><a href="#"> <i class="fas fa-home" style="color:rgb(63, 63, 255)"></i> </a></div>          
+          <!--<h5>&copy; 2022</h5><h5 style="color:rgb(63, 63, 255)"> Cesar Pagliacci</h5><h5>Desarrollo Web</h5>
+          <div class="inicio"><a href="#"> <i class="fas fa-home" style="color:rgb(63, 63, 255)"></i> </a></div>    -->     
       </div>
 
     <script src="./tabs.js"></script>
@@ -412,3 +383,5 @@
    
 </body>
 </html>
+
+
