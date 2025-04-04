@@ -33,7 +33,9 @@ img {
 
   place-items: center;
   gap: 50px;
-  background-image: url(./img/cemento.jpg);
+  /*background-image: url(./img/cemento.jpg);  */
+  /*background-image: url(./img/c1eef.jpg); */
+  background-image: url(./img/056.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
