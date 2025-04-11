@@ -24,26 +24,21 @@ img {
 
 /************* SECTION - HOME **********************/
 
+
 .home {
   display: grid;
   grid-template-columns: 45% 39%;
-
- /* grid-template-rows: 75% 25%;
-  justify-content: center;*/
-
   place-items: center;
   gap: 50px;
-  /*background-image: url(./img/cemento.jpg);  */
-  /*background-image: url(./img/c1eef.jpg); */
-  background-image: url(./img/056.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  /*background:rgb(1, 0, 31);  
-  background: radial-gradient(circle,rgba(35, 36, 57, 1) 80%,black,);*/
-  overflow: hidden;
+  background-color: #000;
+  background: radial-gradient(#0b012d, #000);
+  box-shadow: inset 0 0 30rem #000000;
+  color: #66ff66;
   padding: 35px 80px;
+  margin: 0;  
+  text-shadow: 0 0 5px rgb(from rgb(35, 1, 139) calc(r + 40) calc(g + 40) b);  
+  height: 100vh;
+  overflow: hidden;
 }
 
 .home .frame {
